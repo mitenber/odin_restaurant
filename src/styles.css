@@ -1,3 +1,186 @@
 body {
-    background-color: green;
+    font-family: 'Garamond', 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top navigation */
+body > header {
+    background-color: #1e3a8a;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+nav button {
+    background-color: transparent;
+    border: 2px solid #c7d2fe;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+nav button:hover {
+    background-color: #c7d2fe;
+    color: #1e3a8a;
+}
+
+/* Main content container */
+#content {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Content header */
+#content header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+#content header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Intro section */
+#intro {
+    text-align: center;
+    padding: 60px 30px;
+    background-image: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+    color: white;
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+    margin: 0 0 15px 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+#intro p {
+    font-size: 1.3rem;
+    margin: 0;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* About section */
+.about {
+    padding: 40px;
+    border-bottom: 1px solid #dbeafe;
+}
+
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 12px;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+/* Hours section */
+.hours {
+    padding: 40px;
+    background-color: #eff6ff;
+    text-align: center;
+}
+
+.hours h2 {
+    margin-top: 0;
+    text-align: center;
+    border-bottom-color: #93c5fd;
+}
+
+.hours p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #1e3a8a;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 850px) {
+    #content {
+        margin: 20px;
+        width: auto;
+    }
+    
+    #content header h1 {
+        font-size: 2.2rem;
+    }
+    
+    #intro h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about, .hours {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        justify-content: center;
+    }
+    
+    #intro {
+        padding: 40px 20px;
+    }
+    
+    #intro h2 {
+        font-size: 1.6rem;
+    }
+    
+    #intro p {
+        font-size: 1.1rem;
+    }
+    
+    #content header h1 {
+        font-size: 1.8rem;
+    }
 }
